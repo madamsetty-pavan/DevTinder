@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Simulate an asynchronous operation
 function fetchData() {
     return new Promise(() => {
@@ -15,4 +16,8 @@ function fetchData() {
   }
   
   fetchAndLogData();
+
+  
+console.log('Mongo URI:', process.env.MONGODB_URI); // Log the URI for debugging
+  
 console.log("test");  
